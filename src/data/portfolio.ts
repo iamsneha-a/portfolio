@@ -1,14 +1,14 @@
 export const personal = {
   name: "Sneha A",
-  title: "Software Engineer Trainee",
+  title: "Aspiring Software Developer",
   tagline:
-    "Building scalable web applications using Python, FastAPI, and React, with hands-on experience in real-world product development and testing.",
+    "Building scalable web applications using Python, Django, and React with hands-on experience in real-world product development and modular SaaS platforms.",
   email: "Snehaanjinappanaik@gmail.com",
   github: "https://github.com/sneha",
   linkedin: "https://www.linkedin.com/in/asneha",
-  resume: "/Resume.pdf",
-  heroTech: ["Python", "FastAPI", "React.js", "MySQL", "Git"],
-  avatar: "/avatar.jpg",
+  resume: "/SNEHA A Resume.pdf",
+  heroTech: ["Python", "Django", "React.js", "MySQL", "Git"],
+  avatar: "/avatar.png",
 };
 
 export const about = {
@@ -65,11 +65,11 @@ export const skills = [
 
 export const experience = [
   {
-    role: "Software Engineer Trainee",
+    role: "Software Developer Intern",
     company: "Alstonair Technologies Pvt Ltd",
     companyUrl: "https://alstonair.com",
     location: "Bengaluru",
-    duration: "Feb 2025 – Present",
+    duration: "Feb 2026 – Apr 2026",
     logo: "/images/alstonair-logo.png",
     logoFallback: "AT",
     points: [

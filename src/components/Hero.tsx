@@ -22,18 +22,19 @@ const EmailIcon = () => (
 export default function Hero() {
   return (
     <section className="w-full min-h-screen flex items-center pt-14 bg-white">
-      <div className="max-w-5xl mx-auto px-6 w-full py-20">
-        <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-10 md:gap-14">
+      <div className="max-w-5xl mx-auto px-6 w-full py-16">
+        <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-8 md:gap-12">
 
-          {/* Left */}
-          <div className="w-full max-w-[500px] text-center md:text-left animate-fade-up">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight leading-tight mb-3">
-              {personal.name}
-            </h1>
-            <p className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-7">
+          {/* Left — text content */}
+          <div className="flex-1 text-center md:text-left animate-fade-up">
+            <p className="text-xs font-semibold text-gray-400 uppercase tracking-[0.2em] mb-4">
               {personal.title}
             </p>
-            <p className="text-gray-500 text-base leading-relaxed max-w-md mx-auto md:mx-0 mb-7">
+            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 tracking-tight leading-[1.1] mb-1">
+              {personal.name}
+            </h1>
+            <div className="w-10 h-[3px] bg-gray-900 rounded-full mt-4 mb-6 mx-auto md:mx-0" />
+            <p className="text-gray-500 text-base leading-relaxed max-w-[420px] mx-auto md:mx-0 mb-7">
               {personal.tagline}
             </p>
 
@@ -50,16 +51,16 @@ export default function Hero() {
             </div>
 
             {/* Buttons */}
-            <div className="flex flex-wrap gap-2 justify-center md:justify-start mb-8">
+            <div className="flex flex-wrap gap-3 justify-center md:justify-start mb-8">
               <a
                 href="#projects"
-                className="text-sm font-medium bg-gray-900 text-white px-5 py-2.5 rounded-lg hover:bg-gray-700 hover:-translate-y-px active:translate-y-0 transition-all duration-200 shadow-sm hover:shadow"
+                className="text-sm font-medium bg-gray-900 text-white px-6 py-2.5 rounded-lg hover:bg-gray-700 hover:-translate-y-px active:translate-y-0 transition-all duration-200 shadow-sm hover:shadow"
               >
                 View Projects
               </a>
               <a
                 href="#contact"
-                className="text-sm font-medium border border-gray-200 text-gray-600 px-5 py-2.5 rounded-lg hover:border-gray-400 hover:text-gray-900 hover:-translate-y-px active:translate-y-0 transition-all duration-200"
+                className="text-sm font-medium border border-gray-200 text-gray-600 px-6 py-2.5 rounded-lg hover:border-gray-400 hover:text-gray-900 hover:-translate-y-px active:translate-y-0 transition-all duration-200"
               >
                 Contact Me
               </a>
@@ -87,16 +88,20 @@ export default function Hero() {
           </div>
 
           {/* Right — profile image */}
-          <div className="shrink-0 animate-fade-up">
-            <div className="w-44 h-44 md:w-56 md:h-56 rounded-full border-2 border-gray-200 shadow-sm overflow-hidden bg-gray-100 hover:shadow-md transition-shadow duration-300">
-              <Image
-                src={personal.avatar}
-                alt={personal.name}
-                width={224}
-                height={224}
-                className="w-full h-full object-cover"
-                priority
-              />
+          <div className="shrink-0 flex items-center justify-center animate-fade-up">
+            <div className="relative">
+              <div className="w-52 h-52 md:w-72 md:h-72 rounded-full overflow-hidden border-[3px] border-gray-100 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-gray-100">
+                <Image
+                  src={personal.avatar}
+                  alt={personal.name}
+                  width={288}
+                  height={288}
+                  className="w-full h-full object-cover"
+                  priority
+                />
+              </div>
+              {/* Subtle decorative ring */}
+              <div className="absolute -inset-2 rounded-full border border-gray-200 -z-10" />
             </div>
           </div>
 
