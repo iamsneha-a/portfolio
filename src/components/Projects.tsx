@@ -36,7 +36,7 @@ export default function Projects() {
 
               {/* Content */}
               <div className="flex flex-col justify-center p-6 flex-1">
-<h3 className="text-lg font-bold text-gray-900 mb-1 leading-snug">
+                <h3 className="text-lg font-bold text-gray-900 mb-1 leading-snug">
                   {p.title}
                 </h3>
 
