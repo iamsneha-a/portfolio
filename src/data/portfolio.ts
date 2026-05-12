@@ -6,7 +6,7 @@ export const personal = {
   email: "Snehaanjinappanaik@gmail.com",
   github: "https://github.com/sneha",
   linkedin: "https://www.linkedin.com/in/asneha",
-  resume: "/SNEHA A Resume.pdf",
+  resume: "/Resume.pdf",
   heroTech: ["Python", "Django", "React.js", "MySQL", "Git"],
   avatar: "/avatar.png",
 };
@@ -122,7 +122,7 @@ export const certifications = [
     issuer: "Alstonair Technologies Pvt Ltd",
     year: "2026",
     description: "Completed a Software Developer Internship contributing to SaaS platform development, authentication systems, RBAC, and real-world industry projects.",
-    link: "/certificates/alstonair-internship.pdf",
+    link: "/projects/alstonair-internship.pdf",
     logo: "/images/alstonair-logo.png",
     featured: true,
   },
